@@ -1,0 +1,20 @@
+<div class="header">
+  <div nz-row nzGutter="16" class="row header-box">
+    <div nz-col nzSpan="4">
+      <div class="logo-box"><a href="/"><img src="/assets/imgs/test/logo.png" alt=""></a></div>
+    </div>
+    <div nz-col nzSpan="6">品牌标识 xxxx说明</div>
+    <div nz-col nzSpan="5" nzOffset="6">
+      <nz-input-group [nzSuffix]="suffixIconSearch">
+        <input type="text" [(ngModel)]="name" nz-input  placeholder="input search text" />
+      </nz-input-group>
+    </div>
+    <div nz-col nzSpan="3">
+      <button nz-button nzBlock nzType="primary">预约体验</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #suffixIconSearch>
+  <i nz-icon type="search"></i>
+</ng-template>
