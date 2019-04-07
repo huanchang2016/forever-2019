@@ -1,0 +1,12 @@
+.header {
+    background-color: #fbf2f1;
+    .header-box {
+        height: 98px;
+        display: flex;
+        align-items: center;
+    }
+}
+.content {
+    min-height: 600px;
+    background: url('src/assets/imgs/test/auth_bg_new.jpg') no-repeat center top
+}

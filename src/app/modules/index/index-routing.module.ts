@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LayoutFullScreenComponent } from './layout-full-screen.component';
+import { IndexComponent } from './index.component';
 
 const routes: Routes = [
-  { path: '', component: LayoutFullScreenComponent }
+  { path: '', component: IndexComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LayoutFullScreenRoutingModule { }
+export class IndexRoutingModule { }

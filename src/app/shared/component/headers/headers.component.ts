@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HeadersComponent implements OnInit {
 
   public name:string = '';
+  
   constructor() { }
 
   ngOnInit() {

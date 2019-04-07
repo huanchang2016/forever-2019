@@ -6,7 +6,7 @@
     <div nz-col nzSpan="6">品牌标识 xxxx说明</div>
     <div nz-col nzSpan="5" nzOffset="6">
       <nz-input-group [nzSuffix]="suffixIconSearch">
-        <input type="text" [(ngModel)]="name" nz-input  placeholder="input search text" />
+        <input type="text" [(ngModel)]="name" nz-input (keyup)="($event.which === 13)?search():0"  placeholder="查询" />
       </nz-input-group>
     </div>
     <div nz-col nzSpan="3">

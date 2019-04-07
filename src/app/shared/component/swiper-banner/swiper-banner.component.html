@@ -1,0 +1,23 @@
+<div  class="swiper-container" [swiper]="config" [(index)]="index">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide img-box" *ngFor="let img of imgList">
+      <a href="{{img.link}}" target="_blank">
+        <img [src]="img.src" alt="{{img.alt}}">
+      </a>
+    </div>
+  </div>
+
+  <!-- <div class="swiper-scrollbar"></div> -->
+  <!-- <div class="swiper-pagination"></div> -->
+
+  <div class="swiper-button-prev" (click)="changeIndexPrev($event)"></div>
+  <div class="swiper-button-next" (click)="changeIndexNext($event)"></div>
+</div>
+
+<!-- <swiper [config]="config" [(index)]="index" (indexChange)="indexChange($event)">
+  <div class="swiper-slide img-box" *ngFor="let img of imgList">
+    <a href="{{img.link}}">
+      <img [src]="img.src" alt="{{img.alt}}">
+    </a>
+  </div>
+</swiper> -->
